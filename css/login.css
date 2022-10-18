@@ -1,0 +1,64 @@
+.login-max{
+    display: flex;
+    justify-content: center;
+}
+.login{    
+    background-color: #CADFF8;
+    width: 75%;
+    border-radius: 25px;
+    padding: 5px;
+}
+.datos{
+    padding: 0px 10px 10px 10px;
+}
+h2{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: large;    
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    margin-bottom: 5px;
+}
+input{
+    padding: 8px;
+    border-radius: 5px;
+    border: 0px solid;
+    width: 98%;
+}
+.boton-login{
+    background-color: #3781E3;
+    color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 0px solid;
+}
+form{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "area1" "area2" "area3" "area4" "area5";
+}
+.grid-1{
+    grid-area: area1;
+}
+.grid-2{
+    grid-area: area2;  
+    width: 100%;
+    text-align: -webkit-center;
+}
+.grid-3{
+    grid-area: area3;
+}
+.grid-4{
+    grid-area: area4;   
+    width: 100%;
+    text-align: -webkit-center;
+}
+.grid-5{
+    grid-area: area5;   
+    justify-self: end; 
+}
