@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
 }
+
 .login{    
     background-color: #CADFF8;
-    width: 75%;
     border-radius: 25px;
-    padding: 5px;
+    padding: 15px;
 }
 .datos{
     padding: 0px 10px 10px 10px;
@@ -15,18 +15,15 @@ h2{
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
     justify-content: center;
-    font-size: large;    
+    margin-bottom: 0px;  
 }
 h3{
     font-family: 'Poppins', sans-serif;
-    font-size: medium;
     margin-bottom: 5px;
 }
 input{
-    padding: 8px;
     border-radius: 5px;
     border: 0px solid;
-    width: 98%;
 }
 .boton-login{
     background-color: #3781E3;
@@ -47,18 +44,71 @@ form{
 }
 .grid-2{
     grid-area: area2;  
-    width: 100%;
-    text-align: -webkit-center;
 }
 .grid-3{
     grid-area: area3;
 }
 .grid-4{
     grid-area: area4;   
-    width: 100%;
-    text-align: -webkit-center;
 }
 .grid-5{
     grid-area: area5;   
     justify-self: end; 
+}
+@media screen and (min-width: 1101px) {
+    .login{    
+        width: 85%;
+    }
+    h2{
+        font-size: 2.8em;  
+    }
+    h3{
+        font-size: 2.5em;
+    }
+    input{
+        padding: 12.4px 5px 12.4px 5px;
+        width: 98%;
+        font-size: 2.5em;
+    }
+    .boton-login{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .login{    
+        width: 80%;
+    }
+    h2{
+        font-size: 2.3em;  
+    }
+    h3{
+        font-size: 2em;
+    }
+    input{
+        padding: 7.5px 5px 7.5px 5px;
+        width: 96%;
+        font-size: 2em;
+    }
+    .boton-login{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .login{    
+        width: 75%;
+    }
+    h2{
+        font-size: 1.5em;  
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    input{
+        padding: 8px;
+        width: 94%;
+        font-size: 1.2em;
+    }
+
 }
