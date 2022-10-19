@@ -7,7 +7,7 @@ a{
 }
 
 .header{
-  box-shadow: box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -55,7 +55,7 @@ header .logo{
 
 .header .menu-icon{
  padding-top: 20px;
- xmargin-left: 20px;
+ margin-left: 20px;
  margin-right:10px;
  position: relative;
  float: right;
