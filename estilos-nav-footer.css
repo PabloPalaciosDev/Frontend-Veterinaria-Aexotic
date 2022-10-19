@@ -1,9 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+  --titulo: 'Pacifico', cursive;
+  --subtitulos: 'Plus Jakarta Sans', sans-serif;
+  --texto: 'Poppins', sans-serif;
+  --primary2: #488FDD;
+  --primary1: #3781E3;
+  --accent: #75A4DA;
+  --BG1: #A5C8F3;
+  --BG2: #AECEF4;
+  --text: #00214D;
+}
+*{
+  box-sizing: border-box;
+}
+html{
+  background-color: var(--BG2);
+}
 header{
-    font-family: 	Courier New;
+    font-family: var(--titulo);
 }
 
-a{
-  color: black;
+header a{
+  color: var(--primary2);
 }
 
 .header{
@@ -18,22 +37,31 @@ a{
   list-style: none;
   overflow: hidden;
 }
- .header ul a  {
+.header ul li{
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.header ul li a  {
   text-align:center;
   display: block;
-  padding: 10px;
   text-decoration: none;
+  font-family: var(--subtitulos);
+  color: var(--text);
 }
 
-.btn-registrarse a{
-  margin:0 auto;
-  background-color: #ddd;
-  border-radius:19px;
-  width:110px;
+.header ul .btn-registrarse a {
+  background-color: var(--text);
+  border-radius: 20px;
+  color: var(--BG1);
+  font-weight: 700;
+  padding: 15px;
+}
+.btn-registrarse {
+  width:200px;
 }
 
-.header ul a:hover{
-  background-color: #ddd;
+.header ul li a:hover{
+  color: var(--primary1)
 }
 
 
@@ -97,7 +125,7 @@ header .logo{
 } 
 
 .header .menu-btn:checked ~ .menu{
-  max-height: 250px;
+  max-height: 270px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon{
