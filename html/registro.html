@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register-styles.css">
     <title>Registro</title>
 </head>
-<body>
+<body class="register-back">
     
-    <main>
+    <main class="register-main">
 
-        <form action="" method="POST">
+        <h2>Crear cuenta</h2>          
 
-            <h2>Crear cuenta</h2>          
+        <form action="" method="POST" class="register-form">
 
-            <section>
 
+            <section class="from-section input-doble">
+                <div>
+                    <label class="resgistro-label" for="nombre">Nombre</label>
+                    <input class="resgistro-campo" type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label class="resgistro-label" for="apellido">Apellido</label>
+                    <input class="resgistro-campo" type="text" id="apellido" name="apellido">
+                </div>
             </section>
 
-            <section>
-
+            <section class="from-section input-doble">
+                <div>
+                    <label class="resgistro-label" for="correo-usuario">Correo / Usuario</label>
+                    <input class="resgistro-campo" type="email" id="correo-usuario" name="user">
+                </div>
+                <div>
+                    <label class="resgistro-label" for="numero">Número telefonico</label>
+                    <input class="resgistro-campo" type="tel" name="numero" id="numero">
+                </div>
             </section>
 
-            <section>
-                
+            <section class="from-section">
+                <label class="resgistro-label" for="pass">Contraseña</label>
+                <input class="resgistro-campo" type="password" name="pass" id="pass">
+            </section>
+
+            <section class="from-section">
+                <input type="submit" class="resgistro-campo resgistro-campo-submit" value="Registrase!!">
             </section>
 
         </form>
