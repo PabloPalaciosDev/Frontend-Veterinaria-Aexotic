@@ -26,7 +26,6 @@ header a{
 }
 
 .header{
-  position: fixed;
   width: 100%;
   z-index: 3;
 }
@@ -142,7 +141,12 @@ header .logo{
   top: 0;
 }
 
+
 @media (min-width: 1300px){
+
+  .logo{
+    margin-right: 18%;
+  }
  .btn-registrarse a{
   width:110px;
   margin-right:20px;
@@ -156,8 +160,8 @@ header .logo{
   }
   
   .header .menu{
-  clear: none;
-  float: right;
+    margin-top: 1.5%;
+    clear: none;
     max-height: none;
   }
   
