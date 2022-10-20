@@ -26,7 +26,6 @@ header a{
 }
 
 .header{
-  position: fixed;
   width: 100%;
   z-index: 3;
 }
@@ -142,7 +141,77 @@ header .logo{
   top: 0;
 }
 
-@media (min-width: 1101px){
+/*login*/
+.login-max{
+  display: flex;
+  justify-content: center;
+}
+
+.login{    
+  background-color: #CADFF8;
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 5px 7px 37px -6px rgba(0,0,0,0.58);
+-webkit-box-shadow: 5px 7px 37px -6px rgba(0,0,0,0.58);
+-moz-box-shadow: 5px 7px 37px -6px rgba(0,0,0,0.58);
+}
+.datos{
+  padding: 0px 10px 10px 10px;
+}
+
+.login-max .login h2{
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text);
+ }
+
+.login-max .login .datos h3{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 5px;
+  color: var(--text);
+}
+.datos form section input{
+  border-radius: 5px;
+  border:hidden;
+}
+.datos form{
+  display: grid;
+  width: 100%;
+  grid-template-areas:"area1" "area2" "area3" "area4" "area5";
+}
+.grid-1{
+  grid-area: area1;
+}
+.grid-2{
+  grid-area: area2;  
+}
+.grid-3{
+  grid-area: area3;
+}
+.grid-4{
+  grid-area: area4;   
+}
+.grid-5{
+  grid-area: area5;   
+  justify-self: end; 
+}
+
+.boton-login{
+  font-family: var(--texto);
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--text);
+  color: var(--BG2);
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border: hidden;
+}
+@media (min-width: 1300px){
+
+  .logo{
+    margin-right: 18%;
+  }
  .btn-registrarse a{
   width:110px;
   margin-right:20px;
@@ -156,8 +225,8 @@ header .logo{
   }
   
   .header .menu{
-  clear: none;
-  float: right;
+    margin-top: 1.5%;
+    clear: none;
     max-height: none;
   }
   
@@ -166,117 +235,5 @@ header .logo{
   }
   
 }
-.login-max{
-    display: flex;
-    justify-content: center;
-}
+ 
 
-.login{    
-    background-color: #CADFF8;
-    border-radius: 25px;
-    padding: 15px;
-}
-.datos{
-    padding: 0px 10px 10px 10px;
-}
-h2{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px;  
-}
-h3{
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 5px;
-}
-input{
-    border-radius: 5px;
-    border: 0px solid;
-}
-.boton-login{
-    background-color: #3781E3;
-    color: white;
-    border-radius: 4px;
-    margin-top: 10px;
-    padding: 5px;
-    border: 0px solid;
-}
-form{
-    display: grid;
-    width: 100%;
-    grid-template-areas: 
-    "area1" "area2" "area3" "area4" "area5";
-}
-.grid-1{
-    grid-area: area1;
-}
-.grid-2{
-    grid-area: area2;  
-}
-.grid-3{
-    grid-area: area3;
-}
-.grid-4{
-    grid-area: area4;   
-}
-.grid-5{
-    grid-area: area5;   
-    justify-self: end; 
-}
-@media screen and (min-width: 1101px) {
-    .login{    
-        width: 85%;
-    }
-    h2{
-        font-size: 2.8em;  
-    }
-    h3{
-        font-size: 2.5em;
-    }
-    input{
-        padding: 12.4px 5px 12.4px 5px;
-        width: 98%;
-        font-size: 2.5em;
-    }
-    .boton-login{
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .login{    
-        width: 80%;
-    }
-    h2{
-        font-size: 2.3em;  
-    }
-    h3{
-        font-size: 2em;
-    }
-    input{
-        padding: 7.5px 5px 7.5px 5px;
-        width: 96%;
-        font-size: 2em;
-    }
-    .boton-login{
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .login{    
-        width: 75%;
-    }
-    h2{
-        font-size: 1.5em;  
-    }
-    h3{
-        font-size: 1.2em;
-    }
-    input{
-        padding: 8px;
-        width: 94%;
-        font-size: 1.2em;
-    }
-
-}
