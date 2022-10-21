@@ -141,7 +141,30 @@ header .logo{
   top: 0;
 }
 
-
+/*footer*/
+footer{
+  padding: 20px;
+  background-color: var(--text);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  color: var(--BG2);
+  font-family: var(--texto);
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+}
+footer div .logo{
+  font-family: var(--titulo);
+  font-size: 20px;
+  color: var(--BG2);
+  text-decoration: none;
+}
 @media (min-width: 1300px){
 
   .logo{
