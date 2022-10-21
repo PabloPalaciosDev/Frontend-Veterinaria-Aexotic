@@ -54,10 +54,9 @@ header a{
   color: var(--BG1);
   font-weight: 700;
   padding: 15px;
+  width: 100%;
 }
-.btn-registrarse {
-  width:200px;
-}
+
 
 .header ul li a:hover{
   color: var(--primary1)
@@ -143,15 +142,19 @@ header .logo{
 
 /*footer*/
 footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
   padding: 20px;
   background-color: var(--text);
   position: fixed;
   width: 100%;
   bottom: 0;
+  font-size: 10px;
 }
 footer section{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   color: var(--BG2);
   font-family: var(--texto);
 }
@@ -166,9 +169,11 @@ footer div .logo{
   text-decoration: none;
 }
 @media (min-width: 1300px){
-
+  footer section{
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  }
   .logo{
-    margin-right: 18%;
+    margin-right: 215px;
   }
  .btn-registrarse a{
   width:110px;
