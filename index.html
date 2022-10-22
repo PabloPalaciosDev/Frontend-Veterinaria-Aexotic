@@ -7,17 +7,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="componentes/normalize.css">
+    <link rel="stylesheet" href="componentes/comp-estilos.css">
 
 <body style="background-color: #aecef4;" >
+  <header class="header">
+	
+    <a href="#" class="logo">Aexotic Veterinary</a> 
+<input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+
+<ul class="menu">
+    <li><a href="#dont">Inicio</a></li>
+    <li><a href="#dont">Sobre Nosotros</a></li>
+    <li><a href="#dont">Servicios</a></li>
+    <li><a href="#dont">Contactanos</a></li>
+  <li><a href="#dont"> </a></li>
+  <li><a href="#dont">Inicia Sesión</a></li>
+  <li class="btn-registrarse" ><a  href="#dont">Registrate</a></li>
+</ul>
+
+</header>
 
     <section class="todo" >
          <div class="img-principal">
-             <img   width="20%" src="html/huronn.jpg" style="top: 90px; text-align: center;"/>
+             <img   width="20%" src="img/cui.jpg" style="top: 90px; text-align: center;"/>
          </div>
 
-        <div class="vete" style="background-color: white; width: 22%; border-radius:  23px;  " >
-                <h1 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #3781E3;"> Aexotic Veterinary</h1>
-                <h5 style="font-family: 'Plus Jakarta Sans', sans-serif;">UBICACION </h5>
+        <div class="vete">
+                <h1> Aexotic Veterinary</h1>
+                <h5>UBICACION </h5>
                 <h6> Clinica veterinaria de animales exoticos</h6>
         </div>
 
@@ -32,13 +51,16 @@
                     Contactanos
                 </button>
    </section>
-   <style>
+   <!-- css interno -->
+   <style> 
+   
        .img-principal{
             position: relative;
        }
        .img-principal img{
            width: 100%;
            height: 100%;
+           border-radius: 10px;
        }
        .todo{
            display: flex;
@@ -47,9 +69,13 @@
        }
        .vete{
            position: absolute;
+           background-color: #ffffff7e;
            left: 1%;
-           bottom: 65%;
-           padding: 30px;
+           bottom: 68%;
+           padding: 20px 40px;
+           backdrop-filter: blur(15px);
+           outline: 1px solid #ffff;
+           border-radius: 15px;
        }
        .vete h1{
         font-family: 'Plus Jakarta Sans', sans-serif;
@@ -73,9 +99,39 @@
             border-color: blue ;
             color: white;
        }
+       
    </style>
 </body>
-<footer>
-    ...
-</footer>
+
+  <footer>
+      <section>
+        <div>
+          <a href="#" class="logo">Aexotic Veterinary</a>
+        </div>
+        
+        <div>
+          <h3>Terminos y condiciones</h3>
+          <a>Terminos de servicio</a>
+          <a>Politicia de privacidad</a>
+        </div>
+  
+        <div>
+          <h3>Empresa</h3>
+          <a>Inicio</a>
+          <a>Sobre Nosotros</a>
+          <a>Contactanos</a>
+        </div>
+  
+        <div>
+          <h3>Contactanos</h3>
+          <a>+507 99-999-99</a>
+          <a>aexoticvet@gmail.com</a>
+        </div>
+  
+        <div>
+          <h3>AQUI VA LA UBICACIÓN</h3>
+        </div>
+      </section>
+    </footer>
+
 </html>
