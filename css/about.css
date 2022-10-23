@@ -1,0 +1,45 @@
+.img-principal{
+    position: relative;
+}
+.img-principal img{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+}
+.todo{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.vete{
+   position: absolute;
+   background-color: #ffffff7e;
+   left: 1%;
+   bottom: 68%;
+   padding: 20px 40px;
+   backdrop-filter: blur(15px);
+   outline: 1px solid #ffff;
+   border-radius: 15px;
+}
+.vete h1{
+font-family: 'Plus Jakarta Sans', sans-serif;
+color: #3781E3;
+}
+.lorem{
+   width: 500px;
+   margin-top: 20%;
+   text-align: justify;
+   font-family: 'Poppins', sans-serif;
+}
+.buton{
+   display: flex;
+   flex-direction: column;
+   padding: 10px 8px;
+}
+.boton{
+    background-color: blue;
+    margin-top: 10px;
+    border-radius: 30px;
+    border-color: blue ;
+    color: white;
+} 
