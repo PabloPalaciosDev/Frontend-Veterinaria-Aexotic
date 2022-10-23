@@ -1,3 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#AECEF4 ;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;   
+}
+
+.imagenes {   
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/pngwing.com.png"), url("../img/Captura.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    width: 95%;
+    margin: 0 auto; /*life hack para centrear*/
+    font-style: normal;
+    color: #00214D;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+.title{
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title div {
+    width: 100px;
+    height: 5px;
+    background-color: #00214D;
+}
+.button{
+    color: white;
+    background-color: #3781E3;
+    width: 300px;
+    border: 0px;
+    margin: 30px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.rs{
+    flex-wrap: wrap;
+    max-width: max-content;
+}
+
+@media screen AND (max-width: 705px) {
+    .text {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
 
 :root{
@@ -10,9 +83,6 @@
   --BG1: #A5C8F3;
   --BG2: #AECEF4;
   --text: #00214D;
-}
-*{
-  box-sizing: border-box;
 }
 html{
   background-color: var(--BG2);
@@ -44,7 +114,7 @@ header a{
   text-align:center;
   display: block;
   text-decoration: none;
-  font-family: var(--subtitulos);
+  font-family: 'Plus Jakarta Sans';
   color: var(--text);
 }
 
@@ -68,6 +138,7 @@ header .logo{
   font-size: 20px;
   padding: 10px 10px;
   text-decoration: none;
+  font-family: var(--titulo);
 }
 
 
@@ -154,7 +225,7 @@ footer section{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   color: var(--BG2);
-  font-family: var(--texto);
+  font-family: 'Poppins';
 }
 footer div{
   display: flex;

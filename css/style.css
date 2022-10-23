@@ -1,3 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#AECEF4 ;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;   
+}
+
+.imagenes {   
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/pngwing.com.png"), url("../img/Captura.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    width: 95%;
+    margin: 0 auto; /*life hack para centrear*/
+    font-style: normal;
+    color: #00214D;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+.title{
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title div {
+    width: 100px;
+    height: 5px;
+    background-color: #00214D;
+}
+.button{
+    color: white;
+    background-color: #3781E3;
+    width: 300px;
+    border: 0px;
+    margin: 30px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.rs{
+    flex-wrap: wrap;
+    max-width: max-content;
+}
+
+@media screen AND (max-width: 705px) {
+    .text {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
 
 :root{
@@ -10,9 +83,6 @@
   --BG1: #A5C8F3;
   --BG2: #AECEF4;
   --text: #00214D;
-}
-*{
-  box-sizing: border-box;
 }
 html{
   background-color: var(--BG2);
@@ -44,23 +114,21 @@ header a{
   text-align:center;
   display: block;
   text-decoration: none;
-  font-family: var(--subtitulos);
+  font-family: 'Plus Jakarta Sans';
   color: var(--text);
 }
 
-.header ul .btn-registrarse a {
+.container-register .btn-registrarse{
+  text-align: center;
   background-color: var(--text);
   border-radius: 20px;
   color: var(--BG1);
   font-weight: 700;
-  padding: 15px;
-}
-.btn-registrarse {
-  width:200px;
 }
 
+
 .header ul li a:hover{
-  color: var(--primary1)
+  color: var(--primary1);
 }
 
 
@@ -70,6 +138,7 @@ header .logo{
   font-size: 20px;
   padding: 10px 10px;
   text-decoration: none;
+  font-family: var(--titulo);
 }
 
 
@@ -141,76 +210,43 @@ header .logo{
   top: 0;
 }
 
-/*login*/
-.login-max{
-  display: flex;
-  justify-content: center;
-}
-
-.login{    
-  background-color: #CADFF8;
-  border-radius: 25px;
-  padding: 50px;
-  box-shadow: 5px 7px 37px -6px rgba(0,0,0,0.58);
--webkit-box-shadow: 5px 7px 37px -6px rgba(0,0,0,0.58);
--moz-box-shadow: 5px 7px 37px -6px rgba(0,0,0,0.58);
-}
-.datos{
-  padding: 0px 10px 10px 10px;
-}
-
-.login-max .login h2{
+/*footer*/
+footer{
   text-align: center;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: var(--text);
- }
-
-.login-max .login .datos h3{
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 5px;
-  color: var(--text);
-}
-.datos form section input{
-  border-radius: 5px;
-  border:hidden;
-}
-.datos form{
-  display: grid;
-  width: 100%;
-  grid-template-areas:"area1" "area2" "area3" "area4" "area5";
-}
-.grid-1{
-  grid-area: area1;
-}
-.grid-2{
-  grid-area: area2;  
-}
-.grid-3{
-  grid-area: area3;
-}
-.grid-4{
-  grid-area: area4;   
-}
-.grid-5{
-  grid-area: area5;   
-  justify-self: end; 
-}
-
-.boton-login{
-  font-family: var(--texto);
-  font-weight: 700;
-  text-transform: uppercase;
+  justify-content: center;
+  padding: 20px;
   background-color: var(--text);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 10px;
+}
+footer section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   color: var(--BG2);
-  border-radius: 10px;
-  margin-top: 10px;
-  padding: 10px;
-  border: hidden;
+  font-family: 'Poppins';
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+}
+footer div .logo-footer{
+  font-family: var(--titulo);
+  font-size: 20px;
+  color: var(--BG2);
+  text-decoration: none;
 }
 @media (min-width: 1300px){
-
+  footer div{
+    display:flex;
+  }
+  
+  footer section{
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  }
   .logo{
-    margin-right: 18%;
+    margin-right: 215px;
   }
  .btn-registrarse a{
   width:110px;
