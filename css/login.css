@@ -48,17 +48,19 @@ header a{
   color: var(--text);
 }
 
-.buttom-register .btn-registrarse{
-  text-align: center;
+.header ul .btn-registrarse a {
   background-color: var(--text);
   border-radius: 20px;
   color: var(--BG1);
   font-weight: 700;
+  padding: 15px;
+}
+.btn-registrarse {
+  width:200px;
 }
 
-
 .header ul li a:hover{
-  color: var(--primary1);
+  color: var(--primary1)
 }
 
 
@@ -139,43 +141,76 @@ header .logo{
   top: 0;
 }
 
-/*footer*/
-footer{
-  text-align: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: var(--text);
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  font-size: 10px;
-}
-footer section{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  color: var(--BG2);
-  font-family: var(--texto);
-}
-footer div{
+/*login*/
+.login-max{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
-footer div .logo-footer{
-  font-family: var(--titulo);
-  font-size: 20px;
+
+.login{    
+  background-color: #CADFF8;
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 5px 7px 37px -6px rgba(0,0,0,0.58);
+-webkit-box-shadow: 5px 7px 37px -6px rgba(0,0,0,0.58);
+-moz-box-shadow: 5px 7px 37px -6px rgba(0,0,0,0.58);
+}
+.datos{
+  padding: 0px 10px 10px 10px;
+}
+
+.login-max .login h2{
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text);
+ }
+
+.login-max .login .datos h3{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 5px;
+  color: var(--text);
+}
+.datos form section input{
+  border-radius: 5px;
+  border:hidden;
+}
+.datos form{
+  display: grid;
+  width: 100%;
+  grid-template-areas:"area1" "area2" "area3" "area4" "area5";
+}
+.grid-1{
+  grid-area: area1;
+}
+.grid-2{
+  grid-area: area2;  
+}
+.grid-3{
+  grid-area: area3;
+}
+.grid-4{
+  grid-area: area4;   
+}
+.grid-5{
+  grid-area: area5;   
+  justify-self: end; 
+}
+
+.boton-login{
+  font-family: var(--texto);
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--text);
   color: var(--BG2);
-  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border: hidden;
 }
 @media (min-width: 1300px){
-  footer div{
-    display:flex;
-  }
-  
-  footer section{
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-  }
+
   .logo{
-    margin-right: 215px;
+    margin-right: 18%;
   }
  .btn-registrarse a{
   width:110px;
