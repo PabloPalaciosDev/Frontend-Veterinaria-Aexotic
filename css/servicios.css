@@ -18,6 +18,7 @@ body {
     font-family: Poppins;
     color: #3A3A3A;
     text-align: center;
+    margin: 0px 10% 0px 10%;
 }
 
 .container {
@@ -34,6 +35,8 @@ body {
     width: 20%;
     height: 400px;
     margin: 12.5px 50px 12.5px 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-icon {
@@ -61,14 +64,22 @@ body {
     margin: 25px 0 0 25px;
 }
 
-@media screen and (max-width: 600px) {
-    .container {
-      width: 90%;
-      display: block;
-    }
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 200px;
+  }
+  .card {
+      width: 40%;
+      margin: 25px;
+  }
+}
+
+@media screen and (max-width: 555px) {
     .card {
-        max-width: 100%;
         width: 90%;
-        margin: 10px 50px;
     }
   }
