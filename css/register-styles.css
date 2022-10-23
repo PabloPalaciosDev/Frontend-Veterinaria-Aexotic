@@ -16,6 +16,7 @@
     border-radius: 74px;
     padding: 35px;
     margin: 50px auto;
+    margin: 0 auto;
 }
 
 .register-main h2 {
@@ -53,6 +54,11 @@
 .from-section input {
     width: 100%;
     padding-left: 10px ;
+}
+
+/*PARA EL CAMPO CONTRASEÑA*/
+.from-section input {
+    width: 100%;
 }
 
 /*GENERAL*/
