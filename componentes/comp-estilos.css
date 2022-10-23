@@ -48,7 +48,7 @@ header a{
   color: var(--text);
 }
 
-.buttom-register .btn-registrarse{
+.container-register .btn-registrarse{
   text-align: center;
   background-color: var(--text);
   border-radius: 20px;
