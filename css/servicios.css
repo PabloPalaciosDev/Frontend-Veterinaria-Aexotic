@@ -8,7 +8,7 @@ body {
     background-color: #AECEF4;
 }
 
-.title {
+.title-servicios {
     font-family: Plus Jakarta Sans;
     color: #00214D;
     text-align: center;
@@ -32,7 +32,7 @@ body {
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    width: 20%;
+    width: 25%;
     height: 400px;
     margin: 12.5px 50px 12.5px 50px;
     overflow: hidden;
@@ -63,6 +63,20 @@ body {
     height: 100px;
     margin: 25px 0 0 25px;
 }
+
+@media screen and (max-width: 1200px) {
+    .container {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      margin-bottom: 200px;
+    }
+    .card {
+        width: 25%;
+        margin: 25px;
+    }
+  }
 
 @media screen and (max-width: 1024px) {
   .container {
