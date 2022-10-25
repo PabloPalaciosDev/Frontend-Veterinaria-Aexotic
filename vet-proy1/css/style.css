@@ -9,6 +9,7 @@
   --accent: #75A4DA;
   --BG1: #A5C8F3;
   --BG2: #AECEF4;
+  --BG3: #CADFF8;
   --text: #00214D;
 }
 
@@ -21,6 +22,7 @@ html{
   background-color: var(--BG2);
 }
 header{
+  margin: 0 auto;
     font-family: var(--titulo);
 }
 
@@ -34,30 +36,32 @@ header a{
 }
 
 .header ul{
-  margin: 0;
+  width: 75%;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   overflow: hidden;
 }
 .header ul li{
-  padding-bottom: 10px;
   margin: 0 auto;
 }
 .header ul li a  {
   text-align:center;
   display: block;
   text-decoration: none;
-  font-family: 'Plus Jakarta Sans';
+  font-family: var(--subtitulos);
   color: var(--text);
   font-weight: 700;
 }
-
 .container-register .btn-registrarse{
+  margin: 0 auto;
   text-align: center;
   background-color: var(--primary1);
   border-radius: 20px;
   color: white;
   font-weight: 700;
+  width: 15%;
+  padding: 10px;
 }
 .container-register .btn-registrarse:hover{
   background-color: var(--text);
@@ -97,7 +101,7 @@ header .logo-nav{
 }
 
 .header .menu-icon .nav-icon{
-  background: #333;
+  background: var(--text);
   display: block;
   height: 2px;
   width: 18px;
@@ -106,7 +110,7 @@ header .logo-nav{
 }
 
 .header .menu-icon .nav-icon:before{
-  background: #333;
+  background: var(--text);
   content: "";
   display: block;
   height: 100%;
@@ -117,7 +121,7 @@ header .logo-nav{
 }
 
 .header .menu-icon .nav-icon:after{
-  background: #333;
+  background: var(--text);
   content: "";
   display: block;
   height: 100%;
@@ -207,12 +211,55 @@ header .logo-nav{
   flex-wrap: wrap;
   max-width: max-content;
 }
-
+/*CONTACTO*/
+.container-contact{
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 50px;
+}
+.container-contact div{
+  background-color: var(--BG3);
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px;
+}
+.container-contact div form{
+ display: grid; 
+ gap:15px;
+ font-family: var(--subtitulos);
+}
+.contactos input{
+  margin: auto 30px auto 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.container-contact h3{
+  font-family: var(--subtitulos);
+  text-align: center;
+  padding:20px;
+  text-transform: uppercase;
+}
+.container-contact div form label{
+  font-family: var(--subtitulos);
+  margin-bottom: 5px;
+  padding-left:30px;
+  font-weight: 700;
+}
+#enviar-contact{
+  padding: 10px;
+  color: var(--BG3);
+  justify-self: end;
+  background-color: var(--primary1);
+  font-weight: 700;
+}
+#enviar-contact:hover{
+  background-color: var(--text);
+}
 @media (min-width: 1300px){
-  .header li {
-    float: left;
+  .header ul{
+    display: flex;
   }
-  
   .header li a{
     padding: 20px 30px;
   }
@@ -226,6 +273,21 @@ header .logo-nav{
   .header .menu-icon{
     display: none;
   }
+  .container-register .btn-registrarse{
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--primary1);
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px;
+  }
   
+  .container-contact{
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 50px;
+  }
 }
  
