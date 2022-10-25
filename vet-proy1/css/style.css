@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+  --titulo: 'Pacifico', cursive;
+  --subtitulos: 'Plus Jakarta Sans', sans-serif;
+  --texto: 'Poppins', sans-serif;
+  --primary2: #488FDD;
+  --primary1: #3781E3;
+  --accent: #75A4DA;
+  --BG1: #A5C8F3;
+  --BG2: #AECEF4;
+  --text: #00214D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  background-color: var(--BG2);
+}
+header{
+    font-family: var(--titulo);
+}
+
+header a{
+  color: var(--primary2);
+}
+
+.header{
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.header ul li{
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.header ul li a  {
+  text-align:center;
+  display: block;
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans';
+  color: var(--text);
+  font-weight: 700;
+}
+
+.container-register .btn-registrarse{
+  text-align: center;
+  background-color: var(--primary1);
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+}
+.container-register .btn-registrarse:hover{
+  background-color: var(--text);
+  color: var(--BG1);
+}
+
+.header ul li a:hover{
+  color: var(--primary1);
+}
+
+
+header .logo-nav{
+  text-align: center;
+  float: left;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: var(--titulo);
+  width: 25%;
+  padding: 20px;
+}
+
+
+.header .menu{
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+ padding-top: 20px;
+ margin-left: 20px;
+ margin-right:10px;
+ position: relative;
+ float: right;
+ cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after{
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  transition: all .2s ease-out;
+  }
+
+.header .menu-btn {
+  display: none;
+} 
+
+.header .menu-btn:checked ~ .menu{
+  max-height: 270px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+ background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+ transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/*CSS INICIO*/
+.info-inicio{
+  font-weight: 700;
+}
+.imagenes-inicio {   
+  width: 500px;
+  height: 500px;
+  background-image: url("../img/pngwing.com.png"), url("../img/Captura.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.text-inicio {
+  display: flex;
+  justify-content: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 15px;
+  width: 95%;
+  margin: 0 auto; /*life hack para centrear*/
+  font-style: normal;
+  color: #00214D;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+.title-inicio{
+  line-height: 40px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+}
+
+.title-inicio {
+  display: flex;
+  align-items: center;
+}
+
+.title-inicio div {
+  width: 100px;
+  height: 3px;
+  background-color: var(--text);
+  margin-right: 10px;
+}
+.button-inicio{
+  color: white;
+  background-color: var(--primary1);
+  width: 300px;
+  border: 0px;
+  margin: 30px;
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+.button-inicio:hover{
+  background-color: var(--text);
+}
+.rs-inicio{
+  flex-wrap: wrap;
+  max-width: max-content;
+}
+
+@media (min-width: 1300px){
+  .header li {
+    float: left;
+  }
+  
+  .header li a{
+    padding: 20px 30px;
+  }
+  
+  .header .menu{
+    margin-top: 1.5%;
+    clear: none;
+    max-height: none;
+  }
+  
+  .header .menu-icon{
+    display: none;
+  }
+  
+}
+ 
