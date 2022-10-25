@@ -4,7 +4,7 @@
     margin: 25px auto 125px auto;
     padding: 25px;
     background-color: white;
-    width: 50%;
+    width: 750px;
     height: 750px;
     border-radius: 25px;
 }
@@ -19,8 +19,6 @@
     font-family: Poppins;
 }
 
-
-
 .desc-content p{
     font-family: Plus Jakarta Sans;
     text-align: justify;
@@ -30,4 +28,27 @@
     width: 50%;
     background-image: url(../img/desc.png);
     background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .desc-caja{
+        margin-bottom: 250px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .desc-caja{
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .desc-content{
+        width: 90%;
+    }
+
+    .desc-img{
+        width: 100%;
+        height: 90%;
+        background-image: url(../img/desc1.png);
+    }
 }
