@@ -1,11 +1,11 @@
-.caja-toda{
+.changelog-caja-toda{
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 15px;
 }
-.caja-blanca{
+.changelog-caja-blanca{
     background-color: #fff;
     color: #666;
     box-shadow: 0 5px 15px rgb(0 0 0 / 8%);             
@@ -18,17 +18,17 @@
     top: 30px;
     bottom: 400px;    
 }
-.caja-texto{    
+.changelog-caja-texto{    
     display: flow-root;
     box-sizing: border-box;
     max-width: 1380px;
     display: flow-root;
     padding: 30px 30px;    
 }
-.caja-cambios{
+.changelog-caja{
     margin-bottom: 50px;
 }
-.titulo{
+.changelog-titulo{
     font-family: Plus Jakarta Sans;
     text-align: center;
     font-size: 32.3px;
@@ -36,16 +36,16 @@
     font-weight: 300;
     color: #222;
 }
-.h2-class{
+.changelog-h2{
     font-family: Poppins;
     font-size: 24px;
     line-height: 1.4;
 }
-.span-class{
+.changelog-fecha{
     font-family: Poppins;
     color: #999;    
 }
-.tipo{
+.changelog-tipo{
     font-family: Poppins;
     position: absolute;
     padding: 0 10px;
@@ -59,51 +59,51 @@
     text-align: center;
     width: 90px;
 }
-.arreglar{
+.changelog-arreglar{
     background-color: #f0506e;
 }
-.cambiar{
+.changelog-cambiar{
     background-color: #1e87f0;
 }
-.eliminar{
+.changelog-eliminar{
     background-color: #faa05a;
 }
-.agregar{
+.changelog-agregar{
     background-color: #32d296;
 }
-.mensaje{
+.changelog-mensaje{
     font-family: Plus Jakarta Sans;
     margin-left: 150px;
 }
-.ul-class{
+.changelog-ul{
     padding: 0;
     list-style: none;
 }
-.li-class{
+.changelog-li{
     display: flex;
     align-items: flex-start;
     margin-top: 15px;
 }
-.errores{
-    margin-bottom: 50px;
+.changelog-errores{
+    margin-bottom: 175px;
 }
-.errores-caja{
+.changelog-errores-caja{
     padding: 30px;
 }
-.errores-texto{
+.changelog-errores-texto{
     padding: 0px;
 }
-.enviar-comentario{
+.changelog-enviar-comentario{
     font-family: Plus Jakarta Sans;
     margin: 10px 10px 10px 0px;
 }
-.texto{
+.changelog-texto{
     font-family: Plus Jakarta Sans;
     width: 99%;
     height: 100px;
     text-align: left;
 }
-.enviar-boton{
+.changelog-enviar-boton{
     font-family: Plus Jakarta Sans;
     border: 2px solid black;
     background: #AECEF4;
@@ -111,8 +111,13 @@
     text-align: center;
     width: 100px;
 }
+@media (max-width: 1230px) {
+    .changelog-errores{
+        margin-bottom: 350px;
+    }
+}
 @media (min-width: 960px){
-    .caja-blanca{
+    .changelog-caja-blanca{
         padding-left: 40px;
         padding-right: 40px;
     }
