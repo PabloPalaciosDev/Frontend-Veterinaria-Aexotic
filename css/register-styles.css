@@ -15,6 +15,7 @@
     max-width: 1320px;
     border-radius: 74px;
     padding: 35px;
+    margin: 50px auto;
     margin: 0 auto;
 }
 
@@ -49,8 +50,10 @@
     width: 100%;
 }
 
-.from-section div label {
-
+/*PARA EL CAMPO CONTRASEÑA*/
+.from-section input {
+    width: 100%;
+    padding-left: 10px ;
 }
 
 /*PARA EL CAMPO CONTRASEÑA*/
