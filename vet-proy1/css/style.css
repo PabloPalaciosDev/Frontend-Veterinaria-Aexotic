@@ -33,6 +33,7 @@ header a{
 .header{
   width: 100%;
   z-index: 3;
+  margin-top: 1.5%;
 }
 
 .header ul{
@@ -52,6 +53,7 @@ header a{
   font-family: var(--subtitulos);
   color: var(--text);
   font-weight: 700;
+  padding: 5px;
 }
 .container-register .btn-registrarse{
   margin: 0 auto;
@@ -60,7 +62,7 @@ header a{
   border-radius: 20px;
   color: white;
   font-weight: 700;
-  width: 15%;
+  width: 40%;
   padding: 10px;
 }
 .container-register .btn-registrarse:hover{
@@ -76,12 +78,12 @@ header a{
 header .logo-nav{
   text-align: center;
   float: left;
-  display: block;
+  display: flex;
   font-size: 20px;
   text-decoration: none;
   font-family: var(--titulo);
-  width: 25%;
-  padding: 20px;
+  width: 23%;
+  justify-content: center;
 }
 
 
@@ -211,6 +213,7 @@ header .logo-nav{
   flex-wrap: wrap;
   max-width: max-content;
 }
+
 /*CONTACTO*/
 .container-contact{
   margin: 0 auto;
@@ -256,14 +259,300 @@ header .logo-nav{
 #enviar-contact:hover{
   background-color: var(--text);
 }
-@media (min-width: 1300px){
+
+/*servicios*/
+.title-servicios {
+  font-family: var(--subtitulos);
+  color: var(--text);
+  text-align: center;
+}
+
+.title-servicios-text {
+  font-family: var(--texto);
+  color: var(--text);
+  text-align: center;
+  margin: 0 10%;
+}
+
+.container-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-servicios {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  width: 25%;
+  height: 400px;
+  margin: 12.5px 50px 12.5px 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-title-servicios {
+  font-family: var(--subtitulos);
+  color: var(--text);
+  margin: 0 0 0 25px;
+}
+
+.card-text-servicios {
+  font-family: var(--texto);
+  color: var(--text);
+  margin: 5px 25px;
+}
+
+.icon-servicios {
+  background-color: var(--BG3);
+  padding: 10px;
+  border-radius: 20%;
+  width: 30%;
+  margin: 25px 25px;
+}
+
+
+
+
+
+/*registrar cuenta*/
+.register-main {
+  font-family: var(--subtitulos);
+  background-color: var(--BG3);
+  color: var(--text);
+  width: 60%;
+  border-radius: 30px;
+  padding: 35px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.register-main h2 {
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-doble {
+  display: flex;
+  gap: 20px;
+}
+.from-section div {
+  width: 50%;
+}
+
+/*PARA EL CAMPO CONTRASEÑA*/
+.from-section input {
+  width: 100%;
+  padding-left: 10px ;
+}
+/*GENERAL*/
+.resgistro-campo {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+  display: block;
+}
+
+.from-section .resgistro-campo-submit {
+  background-color: var(--primary1);
+  color: var(--BG3);
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 700;
+}
+.from-section .resgistro-campo-submit:hover{
+  background-color: var(--text);
+}
+
+.resgistro-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/*LOGIN*/
+.login{    
+  background-color: var(--BG3);
+  border-radius: 30px;
+  padding: 50px;
+  width: 90%;
+  margin: 10% auto;
+  font-family: var(--subtitulos);
+  color: var(--text);
+  text-align: center;
+  font-weight: 700;
+}
+.login-container .login .datos form label{
+  margin-top: 20px;
+}
+.datos form input{
+  border-radius: 30px;
+  border:hidden;
+  margin-top: 20px;
+  padding: 10px;
+}
+.datos form{
+  display: grid;
+  width: 100%;
+}
+
+.boton-login{
+  font-family: var(--texto);
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--primary1);
+  color: var(--BG3);
+  border-radius: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  border: hidden;
+  width: 50%;
+}
+
+.boton-login:hover{
+  background-color: var(--text);
+}
+
+/*CRUD ADMIN*/
+.container-global-crud{
+  font-family: var(--subtitulos);
+  color: var(--text);
+  padding-top: 10%;
+  margin: 0 auto;
+  width: 95%;
+  overflow: hidden;
+  clear: both;
+}
+.container-crud-c{
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--BG3);
+  padding: 40px 50px;
+  border-radius: 30px;
+}
+.crud-create-info{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.crud-create-info label{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+.crud-create-info input{
+  border-radius: 30px;
+  padding: 10px;
+  border: hidden;
+  text-align: center;
+}
+.crud-create-info button{
+  color: var(--BG3);
+  font-weight: 700;
+  background-color: var(--primary1);
+  border-radius: 30px;
+  border: hidden;
+  margin: 10px auto;
+  width: 50%;
+  font-size: 20px;
+  padding: 10px;
+}
+.crud-create-info button:hover{
+  background-color: var(--text);
+}
+.container-crud-rud{
+  width: 100%;
+  margin-top: 5%;
+  border-radius: 30px;
+  text-align: center;
+  color: var(--text);
+}
+.container-crud-rud h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.read table {
+  background-color: white;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+}
+
+.read table thead {
+  background-color: #ebeef1;
+  border-bottom: 1px solid #d3dae0;
+}
+
+.read table thead td {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: var(--text);
+  font-size: 14px;
+}
+.read table tbody tr {
+  color: var(--text);
+  border-bottom: 1px solid var(--text);
+}
+.read tr:nth-child(even){background-color: white}
+
+.read table tbody tr:hover {
+  background-color: var(--accent);
+  color: white;
+}
+.read table tbody tr:hover td:nth-child(1) {
+  color: #FFFFFF;
+}
+
+.read table tbody tr td {
+  padding: 10px;
+}
+
+.read table tbody tr td:nth-child(1) {
+  color: var(--text);
+}
+
+.read table tbody tr td.actions {
+  padding: 8px;
+  text-align: right;
+}
+
+.read table tbody tr td.actions .edit, .read table tbody tr td.actions .trash {
+  display: inline-flex;
+  text-align: right;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px 12px;
+}
+
+.read table tbody tr td.actions .trash {
+  background-color: red;
+}
+.read table tbody tr td.actions .trash:hover{
+  background-color: var(--BG1);
+}
+
+.read table tbody tr td.actions .edit {
+  background-color: var(--text);
+}
+
+.read table tbody tr td.actions .edit:hover {
+  background-color: var(--primary1);
+}
+@media (min-width: 1280px){
+  /*NAVEGACION*/
   .header ul{
     display: flex;
-  }
-  .header li a{
-    padding: 20px 30px;
-  }
-  
+    align-items: center;
+  }  
   .header .menu{
     margin-top: 1.5%;
     clear: none;
@@ -283,11 +572,29 @@ header .logo-nav{
     width: 100%;
     padding: 20px;
   }
-  
+  /*REGISTRO*/
+  .from-section .resgistro-campo-submit {
+    width: 25%;
+    
+  }
   .container-contact{
     margin: 0 auto;
     width: 30%;
     padding-top: 50px;
+  }
+
+  /*LOGIN*/
+  .login-container{
+    margin: 0 auto;
+    width: 30%;
+  }
+  .datos form input{
+    margin: 15px auto;
+    width: 100%;
+  }
+
+  .boton-login{
+    width: 50%;
   }
 }
  
