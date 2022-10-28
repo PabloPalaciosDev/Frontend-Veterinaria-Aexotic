@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color:#AECEF4 ;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;   
+}
+
+.imagenes {   
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/pngwing.com.png"), url("../img/Captura.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    width: 95%;
+    margin: 0 auto; /*life hack para centrear*/
+    font-style: normal;
+    color: #00214D;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+.title{
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title div {
+    width: 100px;
+    height: 5px;
+    background-color: #00214D;
+}
+.button{
+    color: white;
+    background-color: #3781E3;
+    width: 300px;
+    border: 0px;
+    margin: 30px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.rs{
+    flex-wrap: wrap;
+    max-width: max-content;
+}
+
+@media screen AND (max-width: 705px) {
+    .text {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+  --titulo: 'Pacifico', cursive;
+  --subtitulos: 'Plus Jakarta Sans', sans-serif;
+  --texto: 'Poppins', sans-serif;
+  --primary2: #488FDD;
+  --primary1: #3781E3;
+  --accent: #75A4DA;
+  --BG1: #A5C8F3;
+  --BG2: #AECEF4;
+  --text: #00214D;
+}
+html{
+  background-color: var(--BG2);
+}
+header{
+    font-family: var(--titulo);
+}
+
+header a{
+  color: var(--primary2);
+}
+
+.header{
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.header ul li{
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.header ul li a  {
+  text-align:center;
+  display: block;
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans';
+  color: var(--text);
+}
+
+.container-register .btn-registrarse{
+  text-align: center;
+  background-color: var(--text);
+  border-radius: 20px;
+  color: var(--BG1);
+  font-weight: 700;
+}
+
+
+.header ul li a:hover{
+  color: var(--primary1);
+}
+
+
+header .logo{
+  float: left;
+  display: block;
+  font-size: 20px;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: var(--titulo);
+}
+
+
+.header .menu{
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+ padding-top: 20px;
+ margin-left: 20px;
+ margin-right:10px;
+ position: relative;
+ float: right;
+ cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 5px;
+  }
+
+.header .menu-icon .nav-icon:after{
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  transition: all .2s ease-out;
+  }
+
+.header .menu-btn {
+  display: none;
+} 
+
+.header .menu-btn:checked ~ .menu{
+  max-height: 270px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+ background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+ transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/*footer*/
+footer{
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--text);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 10px;
+}
+footer section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  color: var(--BG2);
+  font-family: 'Poppins';
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+}
+footer div .logo-footer{
+  font-family: var(--titulo);
+  font-size: 20px;
+  color: var(--BG2);
+  text-decoration: none;
+}
+@media (min-width: 1300px){
+  footer div{
+    display:flex;
+  }
+  
+  footer section{
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  }
+  .logo{
+    margin-right: 215px;
+  }
+ .btn-registrarse a{
+  width:110px;
+  margin-right:20px;
+}
+  .header li {
+    float: left;
+  }
+  
+  .header li a{
+    padding: 20px 30px;
+  }
+  
+  .header .menu{
+    margin-top: 1.5%;
+    clear: none;
+    max-height: none;
+  }
+  
+  .header .menu-icon{
+    display: none;
+  }
+  
+}
+ 
+
