@@ -547,7 +547,6 @@ header .logo-nav{
 .read table tbody tr td.actions .edit:hover {
   background-color: var(--primary1);
 }
-
 @media (min-width: 1280px){
   /*NAVEGACION*/
   .header ul{
@@ -598,37 +597,4 @@ header .logo-nav{
     width: 50%;
   }
 }
-
-/*SERVICIOS RESPONSIVE*/
-@media screen and (max-width: 1200px) {
-  .container-servicios {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-bottom: 200px;
-  }
-  .card-servicios {
-      width: 25%;
-      margin: 25px;
-  }
-}
-@media screen and (max-width: 1024px) {
-.container-servicios {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-bottom: 200px;
-}
-.card-servicios {
-    width: 40%;
-    margin: 25px;
-}
-}
-@media screen and (max-width: 555px) {
-  .card-servicios {
-      width: 90%;
-  }
-}
-/*FIN SERVICIOS RESPONSIVE*/
+ 
