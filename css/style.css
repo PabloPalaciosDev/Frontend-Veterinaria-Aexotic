@@ -16,9 +16,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html{
   background-color: var(--BG2);
+}
+main{
+  min-height: calc( 100vh - 58.39px - 91.95px);
 }
 header{
   margin: 0 auto;
@@ -153,7 +157,38 @@ header .logo-nav{
   transform: rotate(45deg);
   top: 0;
 }
+footer{
+  font-family: var(--subtitulos);
+  color: var(--BG3);
+  background-color: #00214D;
+  padding: 40px;
+}
+footer section{
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100%, 1fr)
+  );
+  justify-items: center;
+}
+footer section div{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+footer section div a{
+  padding: 10px;
+  text-decoration: none;
+  color: var(--BG3);
+}
+footer section div p{
+  padding: 10px;
+}
 
+.title-footer{
+  font-family: var(--titulo);
+}
 /*CSS INICIO*/
 .info-inicio{
   font-weight: 700;
@@ -594,6 +629,16 @@ header .logo-nav{
 
   .boton-login{
     width: 50%;
+  }
+
+  /*foooter*/
+  footer section{
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(20%, 1fr)
+    );
+    justify-items: center;
   }
 }
  
