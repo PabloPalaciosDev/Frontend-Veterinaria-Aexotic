@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Registro</title>
+</head>
+<body>
+ <!--NAVEGACION-->
+ <header class="header">
+	
+    <a href="#" class="logo-nav">Aexotic Veterinary</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+  
+  <ul class="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="#">Sobre Nosotros</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="Contactos.html">Contactanos</a></li>
+  <li><a> </a></li>
+  <li><a href="login.html">Inicia Sesión</a></li>
+  <li class="container-register"><a class="btn-registrarse"  href="registro.html">Registrate</a></li>
+  </ul>
+  </header>    
+    <main class="register-main">
+
+        <h2>Crear cuenta</h2>          
+
+        <form action="" method="POST" class="register-form">
+
+
+            <section class="from-section input-doble">
+                <div>
+                    <label class="resgistro-label" for="nombre">Nombre</label>
+                    <input class="resgistro-campo" type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label class="resgistro-label" for="apellido">Apellido</label>
+                    <input class="resgistro-campo" type="text" id="apellido" name="apellido">
+                </div>
+            </section>
+
+            <section class="from-section input-doble">
+                <div>
+                    <label class="resgistro-label" for="correo-usuario">Correo / Usuario</label>
+                    <input class="resgistro-campo" type="email" id="correo-usuario" name="user">
+                </div>
+                <div>
+                    <label class="resgistro-label" for="pass">Contraseña</label>
+                    <input class="resgistro-campo" type="password" name="pass" id="pass">
+                </div>
+            </section>
+
+            <section class="from-section">
+                <label class="resgistro-label" for="numero">Número telefonico</label>
+                <input class="resgistro-campo" type="tel" name="numero" id="numero">
+            </section>
+
+            <section class="from-section">
+                <input type="submit" class="resgistro-campo resgistro-campo-submit" value="REGISTRAR">
+            </section>
+        </form>
+    </main>
+</body>
+</html>
