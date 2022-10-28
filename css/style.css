@@ -581,6 +581,32 @@ footer section div p{
 .read table tbody tr td.actions .edit:hover {
   background-color: var(--primary1);
 }
+
+
+
+/*MEDIAS QUERIES*/
+@media screen and (max-width: 1024px) {
+    .desc-caja{
+        margin-bottom: 250px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .desc-caja{
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .desc-content{
+        width: 90%;
+    }
+
+    .desc-img{
+        width: 100%;
+        height: 90%;
+        background-image: url(../img/desc1.png);
+    }
+}
 @media (min-width: 1280px){
   /*NAVEGACION*/
   .header ul{
