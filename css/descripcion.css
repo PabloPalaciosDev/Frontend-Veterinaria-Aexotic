@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+  --titulo: 'Pacifico', cursive;
+  --subtitulos: 'Plus Jakarta Sans', sans-serif;
+  --texto: 'Poppins', sans-serif;
+  --primary2: #488FDD;
+  --primary1: #3781E3;
+  --accent: #75A4DA;
+  --BG1: #A5C8F3;
+  --BG2: #AECEF4;
+  --text: #00214D;
+}
+html{
+  background-color: var(--BG2);
+}
 header{
     font-family: var(--titulo);
 }
@@ -151,6 +167,34 @@ header .logo{
     width: 50%;
     background-image: url(../img/desc.png);
     background-size: cover;
+}
+
+@media (min-width: 1300px){
+  .logo{
+    margin-right: 215px;
+  }
+ .btn-registrarse a{
+  width:110px;
+  margin-right:20px;
+}
+  .header li {
+    float: left;
+  }
+  
+  .header li a{
+    padding: 20px 30px;
+  }
+  
+  .header .menu{
+    margin-top: 1.5%;
+    clear: none;
+    max-height: none;
+  }
+  
+  .header .menu-icon{
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 1024px) {
