@@ -676,11 +676,11 @@ footer section div p{
 
 /*CRUD PROFILE*/
 .fs-back {
-  background-color: #E9F4FF;
+  background-color: var(--BG2);
 }
 
 .fs-principal {
-  padding-top: 10px;
+  padding-top: 20px;
   font-family: var(--subtitulos);
   margin: 0 auto;
   max-width: 1200px;
@@ -696,19 +696,24 @@ footer section div p{
   justify-content: space-between;
   display: flex;
 }
-
+.fs-header h2{
+  margin: 0;
+}
+.fs-header p{
+  margin: 0;
+}
 .fs-header-child {
   width: 50%;
 }
 
 .fs-user-card {
-  background-color: #CADFF8;
+  background-color: var(--BG3);
   border-radius: 74px;
   display: flex;
   gap: 5px;
   width: auto;
   flex-shrink: 0;
-  padding: 10px;
+  padding: 20px;
   align-items: center;
   position: relative;
 }
@@ -784,10 +789,13 @@ footer section div p{
   position: relative;
   display: flex;
   height: auto;
-  background-color: #CADFF8;
+  background-color: var(--BG3);
   border-radius: 74px;
   padding: 10px 30px 10px 10px;
   gap: 10px;
+}
+.fs-pet-card-nacimiento{
+  width: 35%;
 }
 /*MEDIAS QUERIES*/
 @media screen AND (max-width: 543px) {
