@@ -155,6 +155,7 @@ header .logo-nav{
   transform: rotate(45deg);
   top: 0;
 }
+/*footer*/
 footer{
   font-family: var(--subtitulos);
   color: var(--BG3);
@@ -180,11 +181,17 @@ footer section div a{
   text-decoration: none;
   color: var(--BG3);
 }
+footer section div a:hover{
+  color: var(--accent);
+  font-weight: 700;
+}
 footer section div p{
   padding: 10px;
 }
 
 .title-footer{
+  font-weight: 100;
+  letter-spacing: 2px;
   font-family: var(--titulo);
 }
 /*CSS INICIO*/
