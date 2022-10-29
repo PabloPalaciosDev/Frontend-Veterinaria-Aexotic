@@ -675,12 +675,15 @@ footer section div p{
 }
 
 .fs-principal {
+  padding-top: 10px;
+  font-family: var(--subtitulos);
   margin: 0 auto;
   max-width: 1200px;
   width: 95%;
 }
 
 .fs-header {
+  font-family: var(--subtitulos);
   margin-top: 20px;
   gap: 10px;
   padding: 0 20px;
@@ -765,6 +768,7 @@ footer section div p{
 }
 
 .fs-pets-container {
+  font-family: var(--texto);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -780,6 +784,154 @@ footer section div p{
   padding: 10px 30px 10px 10px;
   gap: 10px;
 }
+
+
+/*sobre nosotros*/
+.main-aboutus{
+  background-repeat: no-repeat;
+    margin: 7%;
+    padding: 0%;
+    border:0%;
+    box-sizing: border-box;
+}
+.fondo{
+  background-image: url(/img/back1.jpg);
+  background-size: contain;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+.flex_us{
+    display: flex;
+}
+
+.box_about_us{
+    background-color:#D9D9D9 ;
+    height: 210px;
+    width: 600px;
+    border-radius: 6%;
+    padding-left: 20px;
+    margin: 100px;
+    text-align: left;
+}
+
+.circle_us{
+    border-radius: 50%;
+    padding: 50px;
+    margin: -220px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.circle_us_left{
+    border-radius: 50%;
+    padding: 50px;
+    margin-left: -800px;
+    margin-bottom: 110px;
+    margin-top: -150px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
+
+.box_about_us_left{
+    background-color:#D9D9D9 ;
+    height: 250px;
+    width: 500px;
+    border-radius: 6%;
+    padding-left: 20px;
+    margin-left: 500px;
+    text-align: right;
+}
+
+.box_about_team{
+  background-color:#D9D9D9 ;
+  height: 250px;
+  width: 500px;
+  border-radius: 6%;
+  padding-left: 16px;
+  margin: 100px;
+  text-align: left;
+}
+
+.text_us{
+    line-height:25px ;
+    font-size: 16.5px;
+    color: #000000;
+    font-family: var(--texto);
+    font-weight:100;
+    letter-spacing: 1.1px;
+    padding: 40px;
+}
+.text_equipo{
+  color:rgb(208, 231, 230);
+  margin-left: 45px;
+  margin-top: -52.6px;
+  margin-bottom: 150px;
+  letter-spacing: 20px;
+  font-weight: 0.1;
+  font-size: 100px;
+  font-family: var(--texto);
+  justify-content: center;
+  background-color: #80bbe2;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/*HEADER Y FOOTER CSS de sobre nosotros*/
+.img-principal{
+    position: relative;
+ }
+ .img-principal img{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+ }
+ .todo{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+ }
+ .vete{
+   position: absolute;
+   background-color: #ff00007e;
+   left: 1%;
+   bottom: 68%;
+   padding: 20px 40px;
+   backdrop-filter: blur(15px);
+   outline: 1px solid rgb(253, 4, 4);
+   border-radius: 15px;
+ }
+ .vete h1{
+ font-family: 'Plus Jakarta Sans', sans-serif;
+ color: #e33737;
+ }
+ .lorem{
+   width: 500px;
+   margin-top: 20%;
+   text-align: justify;
+   font-family: 'Poppins', sans-serif;
+ }
+ .buton{
+   display: flex;
+   flex-direction: column;
+   padding: 10px 8px;
+ }
+ .boton{
+    background-color: rgb(255, 0, 0);
+    margin-top: 10px;
+    border-radius: 30px;
+    border-color: rgb(255, 0, 0) ;
+    color: white;
+ } 
 /*MEDIAS QUERIES*/
 @media screen AND (max-width: 543px) {
   .fs-user-card div {
