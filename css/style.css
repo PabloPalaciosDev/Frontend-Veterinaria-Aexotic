@@ -354,7 +354,8 @@ footer section div p{
   font-family: var(--subtitulos);
   background-color: var(--BG3);
   color: var(--text);
-  width: 60%;
+  width: 95%;
+  max-width: 1200px;
   border-radius: 30px;
   padding: 35px;
   margin: 50px auto;
@@ -581,14 +582,227 @@ footer section div p{
 .read table tbody tr td.actions .edit:hover {
   background-color: var(--primary1);
 }
+/*DESCRIPCION*/
+.desc-caja{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 125px auto;
+  padding: 25px;
+  background-color: white;
+  width: 750px;
+  height: 750px;
+  border-radius: 25px;
+}
+
+.desc-content{
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.desc-title, .desc-subtitle{
+  font-family: Poppins;
+}
+
+.desc-content p{
+  font-family: Plus Jakarta Sans;
+  text-align: justify;
+}
+
+.desc-img{
+  width: 50%;
+  background-image: url(../img/desc.png);
+  background-size: cover;
+}
+
+/*pantalla de busqueda*/
+.Titulo-Busqueda{
+  font-family: var(--titulo);
+  color: var(--primary2);
+  text-align: center;
+}
+.busqueda{
+  display: grid; 
+  gap: 15px;
+  justify-content: baseline;
+}
+.buscar{
+  justify-self: center;
+  width: 80%;
+  margin: auto 30px auto 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.buscar-boton{
+  border: none;
+  margin-right: 9.5%;
+  width:100px;
+  color: white;
+  justify-self: end;
+  background-color: #3781E3;
+  border-radius: 5px;
+}
+.animales-exoticos{
+  margin-top: 50px;
+  display: flex;
+  justify-content:center;
+  gap: 10%;
+}
+.animales-exoticos > section>img{
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  justify-self: center;
+  margin-top: 20px;
+}
+.animales-exoticos>section{
+  background-color: white;
+  width: 350px;
+  height: 300px;
+  display: grid;
+  justify-content: center;
+  border-radius: 5px;
+}
+.animales-exoticos>section>p{
+  width: 300px;
+}
 
 
+/*CRUD PROFILE*/
+.fs-back {
+  background-color: #E9F4FF;
+}
 
+.fs-principal {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 95%;
+}
+
+.fs-header {
+  margin-top: 20px;
+  gap: 10px;
+  padding: 0 20px;
+  height: 100px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.fs-header-child {
+  width: 50%;
+}
+
+.fs-user-card {
+  background-color: #CADFF8;
+  border-radius: 74px;
+  display: flex;
+  gap: 5px;
+  width: auto;
+  flex-shrink: 0;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.fs-user-card figure, .fs-pet-card figure {
+  width: 80px;
+  flex-shrink: 0;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px #00000077;
+  border-radius: 50%;
+}
+
+.fs-sobre-ti {
+  width: 100%;
+}
+
+.fs-sobre-ti p {
+  height: 70%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.fs-img {
+  width: 100%;
+  height: 100%;
+}
+.fs-img-70p {
+  width: 75%;
+  height: 75%;
+}
+.fs-float-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(4px, -4px);
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  box-shadow: 2px 2px 8px #00000077;
+  border-radius: 50%;
+}
+.fs-float-button-big {
+  width: 40px;
+  height: 40px;
+}
+.fs-float-button-center {
+  top: 0;
+  bottom: 0;
+  transform: translate(12px, -4px);
+  margin: auto 0;
+}
+
+.fs-separador {
+  background-color: #00214D;
+  width: 100%;
+  height: 4px;
+  margin: 10px 0;
+}
+
+.fs-pets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.fs-pet-card {
+  position: relative;
+  display: flex;
+  height: auto;
+  background-color: #CADFF8;
+  border-radius: 74px;
+  padding: 10px 30px 10px 10px;
+  gap: 10px;
+}
 /*MEDIAS QUERIES*/
+@media screen AND (max-width: 543px) {
+  .fs-user-card div {
+      display: none;
+  }
+  .fs-user-card {
+      align-items: center;
+      justify-content: center;
+  }
+  .fs-pet-card-nacimiento {
+      display: none;
+  }
+}
 @media screen and (max-width: 1024px) {
     .desc-caja{
         margin-bottom: 250px;
     }
+
+    .animales-exoticos{
+      display: grid;
+      grid-template-columns: 50%;
+  }
+  
 }
 
 @media screen and (max-width: 800px) {
