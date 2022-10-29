@@ -13,7 +13,7 @@
   --text: #00214D;
 }
 html{
-  background-color:var(--BG2);
+  background-color:var(--text);
 }
 main{
   min-height: calc( 100vh - 58.39px - 91.95px);
@@ -124,7 +124,7 @@ main{
 }
 
 header a{
-  color: var(--primary2);
+  color: var(--BG3);
 }
 
 .header{
@@ -148,7 +148,7 @@ header a{
   display: block;
   text-decoration: none;
   font-family: var(--subtitulos);
-  color: var(--text);
+  color: var(--BG3);
   font-weight: 700;
   padding: 5px;
 }
@@ -163,8 +163,8 @@ header a{
   padding: 10px;
 }
 .container-register .btn-registrarse:hover{
-  background-color: var(--text);
-  color: var(--BG1);
+  background-color: var(--BG3);
+  color: var(--text);
 }
 
 .header ul li a:hover{
@@ -254,8 +254,8 @@ header .logo-nav{
 /*footer*/
 footer{
   font-family: var(--subtitulos);
-  color: var(--BG3);
-  background-color: #00214D;
+  color: var(--text);
+  background-color: var(--BG3);
   padding: 40px;
 }
 footer section{
@@ -275,10 +275,10 @@ footer section div{
 footer section div a{
   padding: 10px;
   text-decoration: none;
-  color: var(--BG3);
+  color: var(--text);
 }
 footer section div a:hover{
-  color: var(--accent);
+  color: var(--primary2);
   font-weight: 700;
 }
 footer section div p{
