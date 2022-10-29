@@ -581,7 +581,38 @@ footer section div p{
 .read table tbody tr td.actions .edit:hover {
   background-color: var(--primary1);
 }
+/*DESCRIPCION*/
+.desc-caja{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 125px auto;
+  padding: 25px;
+  background-color: white;
+  width: 750px;
+  height: 750px;
+  border-radius: 25px;
+}
 
+.desc-content{
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.desc-title, .desc-subtitle{
+  font-family: Poppins;
+}
+
+.desc-content p{
+  font-family: Plus Jakarta Sans;
+  text-align: justify;
+}
+
+.desc-img{
+  width: 50%;
+  background-image: url(../img/desc.png);
+  background-size: cover;
+}
 
 
 /*MEDIAS QUERIES*/
