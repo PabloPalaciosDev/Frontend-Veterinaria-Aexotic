@@ -354,7 +354,8 @@ footer section div p{
   font-family: var(--subtitulos);
   background-color: var(--BG3);
   color: var(--text);
-  width: 60%;
+  width: 95%;
+  max-width: 1200px;
   border-radius: 30px;
   padding: 35px;
   margin: 50px auto;
