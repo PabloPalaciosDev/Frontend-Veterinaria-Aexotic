@@ -614,12 +614,69 @@ footer section div p{
   background-size: cover;
 }
 
-
+/*pantalla de busqueda*/
+.Titulo-Busqueda{
+  font-family: var(--titulo);
+  color: var(--primary2);
+  text-align: center;
+}
+.busqueda{
+  display: grid; 
+  gap: 15px;
+  justify-content: baseline;
+}
+.buscar{
+  justify-self: center;
+  width: 80%;
+  margin: auto 30px auto 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.buscar-boton{
+  border: none;
+  margin-right: 9.5%;
+  width:100px;
+  color: white;
+  justify-self: end;
+  background-color: #3781E3;
+  border-radius: 5px;
+}
+.animales-exoticos{
+  margin-top: 50px;
+  display: flex;
+  justify-content:center;
+  gap: 10%;
+}
+.animales-exoticos > section>img{
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  justify-self: center;
+  margin-top: 20px;
+}
+.animales-exoticos>section{
+  background-color: white;
+  width: 350px;
+  height: 300px;
+  display: grid;
+  justify-content: center;
+  border-radius: 5px;
+}
+.animales-exoticos>section>p{
+  width: 300px;
+}
 /*MEDIAS QUERIES*/
 @media screen and (max-width: 1024px) {
     .desc-caja{
         margin-bottom: 250px;
     }
+
+    .animales-exoticos{
+      display: grid;
+      grid-template-columns: 50%;
+  }
+  
 }
 
 @media screen and (max-width: 800px) {
