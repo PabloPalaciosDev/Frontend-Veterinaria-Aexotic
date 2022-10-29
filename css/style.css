@@ -696,15 +696,15 @@ footer section div p{
   background-color: #CADFF8;
   border-radius: 74px;
   display: flex;
-  flex-shrink: 0;
   gap: 5px;
-  padding: 15px;
+  width: auto;
+  flex-shrink: 0;
+  padding: 10px;
   align-items: center;
-  justify-content: space-between;
   position: relative;
 }
 
-.fs-user-card figure {
+.fs-user-card figure, .fs-pet-card figure {
   width: 80px;
   flex-shrink: 0;
   height: 80px;
@@ -715,6 +715,10 @@ footer section div p{
 
 .fs-sobre-ti {
   width: 100%;
+}
+
+.fs-sobre-ti p {
+  height: 70%;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -734,12 +738,22 @@ footer section div p{
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(8px, -8px);
+  transform: translate(4px, -4px);
   background-color: #fff;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   box-shadow: 2px 2px 8px #00000077;
   border-radius: 50%;
+}
+.fs-float-button-big {
+  width: 40px;
+  height: 40px;
+}
+.fs-float-button-center {
+  top: 0;
+  bottom: 0;
+  transform: translate(12px, -4px);
+  margin: auto 0;
 }
 
 .fs-separador {
@@ -748,16 +762,34 @@ footer section div p{
   height: 4px;
   margin: 10px 0;
 }
+
+.fs-pets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.fs-pet-card {
+  position: relative;
+  display: flex;
+  height: auto;
+  background-color: #CADFF8;
+  border-radius: 74px;
+  padding: 10px 30px 10px 10px;
+  gap: 10px;
+}
 /*MEDIAS QUERIES*/
 @media screen AND (max-width: 543px) {
   .fs-user-card div {
       display: none;
   }
   .fs-user-card {
-      width: 100px;
       align-items: center;
       justify-content: center;
-      height: 100px;
+  }
+  .fs-pet-card-nacimiento {
+      display: none;
   }
 }
 @media screen and (max-width: 1024px) {
